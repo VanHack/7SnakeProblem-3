@@ -24,7 +24,7 @@ Execution
     
     java Main "path"
 
-Note¹ : where "path" will be the path of the grip that will serve as input to the program.
+Note¹ : where "path" will be the path of the grid that will serve as input to the program.
 
 Note² : If a directory is not informed, the program returns the message: "File path not informed";
 
