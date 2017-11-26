@@ -20,7 +20,12 @@ public class Main {
 
         File f = new File(pathFile);
         if( !f.exists() ) {
-            System.err.println("File not exists.");
+            System.err.println("Directory not exists.");
+            System.exit(0);
+        }
+
+        if( !f.isFile() ) {
+            System.err.println("It is not a file directory.");
             System.exit(0);
         }
 
