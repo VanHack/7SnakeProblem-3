@@ -29,3 +29,18 @@ Note¹ : where "path" will be the path of the grip that will serve as input to t
 Note² : If a directory is not informed, the program returns the message: "File path not informed";
 
 Note³ : If an invalid directory is informed system displays the message "File not exists."
+
+### Output
+Two lines, each representing a snake with the necessary steps to find the desired solution. 
+At the end is shown the sum of the body of the snake.
+
+e.g.:
+```
+Snake A
+	Step 1 -> X:5 - Y:6
+Sum -> 241
+
+Snake B
+	Step 1 -> X:8 - Y:10
+Sum -> 241
+```
