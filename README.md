@@ -1,4 +1,4 @@
-# H1 - 7SnakeProblem
+# 7SnakeProblem
 
 Project
 ======
@@ -11,7 +11,7 @@ Getting Started
 Prerequisites
 ------
 	To run the project it is necessary that the machine has Java 8 installed.
-	
+
 	It is that you have a grid, with the specifications determined by the challenge.
 
 Execution
