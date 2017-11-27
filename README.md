@@ -23,6 +23,8 @@ Execution
 2 - Execute the following command
     
     java Main "path"
+    
+	Example: java Main /Users/guerethes/Downloads/7SnakeProblem-master/example2.csv
 
 Note¹ : where "path" will be the path of the grid that will serve as input to the program.
 

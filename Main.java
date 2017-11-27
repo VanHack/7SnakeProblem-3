@@ -45,7 +45,6 @@ public class Main {
         }
 
         if ( finish ) {
-            System.out.println("Achei na interação -> " + interation);
             snakes[0].printSteps();
             snakes[1].printSteps();
         } else {
