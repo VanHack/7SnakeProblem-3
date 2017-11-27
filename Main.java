@@ -32,15 +32,12 @@ public class Main {
         Grid grid = new Grid();
         List<List<Integer>> gridSnakes = grid.read(pathFile);
 
-        int loop = 2500, bath = 750, interation = 0;
+        int loop = 100000, interation = 0;
         ExecutorService executor = Executors.newFixedThreadPool(5);
         try {
-            while ( !finish && interation < loop ) {
-                for (int i = 0; i < bath; i++) {
-                    Runnable worker = new PlayGame(gridSnakes);
-                    executor.execute(worker);
-                }
-                interation++;
+            while ( !finish && interation < loop ) {                
+                Runnable worker = new PlayGame(gridSnakes);
+                executor.execute(worker);
             }
         } finally {
             executor.shutdown();
@@ -48,6 +45,7 @@ public class Main {
         }
 
         if ( finish ) {
+            System.out.println("Achei na interação -> " + interation);
             snakes[0].printSteps();
             snakes[1].printSteps();
         } else {

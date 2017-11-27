@@ -93,7 +93,7 @@ public class Snake {
                 values[0] = positionX;
                 values[1] = positionY;
                 values[2] = value;
-                break accept;
+                return values;
             }
         }
 
